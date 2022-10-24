@@ -1,0 +1,98 @@
+html, body {
+    margin: 0;
+}
+
+.socialBlock {
+    position: fixed;
+    bottom: 0px;
+    width: 100%;
+}
+
+.socialWrap {
+    display: grid;
+    grid-template-columns: repeat(7, auto);
+    align-items: center;
+    background: #242424;
+    color: white;
+}
+
+.socialHeader {
+    font-size: 20px;
+    font-weight: bold;
+}
+
+.socialWrap img {
+    width: 40px;
+}
+
+.socialWrap span {
+    text-align: center;
+}
+
+.socialWrap a {
+    display: block;
+    width: 100%;
+}
+
+.socTele {
+    background: #55acee;
+    padding: 10px 0;
+    transition: 0.5s;
+}
+
+.socTele:hover {
+    filter: brightness(125%);
+}
+
+.socVk {
+    background: #017bb8;
+    padding: 10px 0;
+    transition: 0.5s;
+}
+
+.socVk:hover {
+    filter: brightness(125%);
+}
+
+.socFb {
+    background: #3b599a;
+    padding: 10px 0;
+    transition: 0.5s;
+}
+
+.socFb:hover {
+    filter: brightness(125%);
+}
+
+.socOk {
+    background: #eb4b24;
+    padding: 10px 0;
+    transition: 0.5s;
+}
+
+.socOk:hover {
+    filter: contrast(200%);
+}
+
+.socInsta {
+    background: #fd1e76;
+    padding: 10px 0;
+    transition: 0.5s;
+}
+
+.socInsta:hover {
+    filter: grayscale(50%);
+}
+
+#closeSocial {
+    cursor: pointer;
+}
+
+@media only screen and (max-width: 700px) {
+   .socialWrap {
+        grid-template-columns: repeat(5, 1fr);
+   }
+   .socialHeader, #closeSocial {
+        display: none;
+   }
+}
